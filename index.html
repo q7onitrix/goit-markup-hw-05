@@ -68,7 +68,7 @@
 
       <section class="section-benefits">
         <div class="container">
-          <h2 class="benefits-title-hidden">Benefits</h2>
+          <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-item">
               <div class="benefits-container">
@@ -460,6 +460,28 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <p class="footer-socials-paragraph">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="label-subscribe" for="input-form">
+              <input
+                class="subscribe-form-input"
+                name="email-subscribe"
+                type="email"
+                placeholder="E-mail"
+                id="input-form"
+              />
+            </label>
+
+            <button type="submit" class="subscribe-button">
+              Subscribe
+              <svg class="subscribe-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -524,22 +546,27 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="form-field-wrapper">
-            <input type="checkbox" name="policy" id="policy" value="true" />
-            <label for="policy" class="policy-label"
+
+          <div class="checkbox-container">
+            <input
+              class="input-checkbox-field visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+            />
+            <label class="label-checkbox-field" for="policy">
+              <span class="span-label-checkbox"
+                ><svg class="svg-span-label" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use></svg></span
               >I accept the terms and conditions of the
-              <a href="" class="accent policy-link">Privacy Policy</a></label
-            >
+              <a class="policy-link" href="./index.html">Privacy Policy</a>
+            </label>
           </div>
+
           <button class="button-modal" type="submit">Send</button>
         </form>
       </div>
     </div>
   </body>
 </html>
-
-<!-- 
-<a href="./index.html" class="socials-link">
-    
-  </a>
-   -->
